@@ -1,0 +1,16 @@
+# Python
+__pycache__
+build
+*.py[cod]
+*$py.class
+
+# VSC
+.vscode
+
+# Custom
+venv
+
+# Audio
+*.webm
+*.mp3
+queue
