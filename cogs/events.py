@@ -3,6 +3,7 @@ import settings as st
 import discord
 from discord.ext import commands, tasks
 
+
 class Events(commands.Cog):
 
     def __init__(self, bot):
@@ -57,7 +58,6 @@ class Events(commands.Cog):
     @tasks.loop(seconds=2)
     async def change_status(self):
         await self.bot.change_presence(activity=discord.Game(next(self.statuses)))
-
 
 def setup(bot):
     bot.add_cog(Events(bot))

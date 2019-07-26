@@ -8,7 +8,6 @@ class Admin(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     
-    # Cogs
     @commands.command()
     async def load(self, ctx, extension):
         """Loads the given module."""

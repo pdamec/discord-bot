@@ -29,7 +29,7 @@ _8ball_responses = [
 
 # Status
 statuses = ['Sometimes', 'I', 'Think', 'Of', 'World of Warcraft']
-
+ 
 # Greetings
 greetings = {
     'polish': ['cześć', 'czesc', 'cze', 'siema', 'hej', 'witaj'],
@@ -39,10 +39,14 @@ greetings = {
 # Youtube
 ytdl_opts = {
     'format': 'bestaudio/best',
-    'outtmpl': '%(extractor)s_%(id)s_%(title)s.%(ext)s',
-    'postprocessors': [{
-        'key': 'FFmpegExtractAudio',
-        'preferredcodec': 'mp3',
-        'preferredquality': '192'
-    }]
+    'restrictfilenames': True,
+    'noplaylist': True,
+    'nocheckcertificate': True,
+    'ignoreerrors': False,
+    'logtostderr': False,
+    'default_search': 'auto',
+}
+
+ffmpeg_options = {
+    'options': '-vn'
 }
