@@ -1,5 +1,6 @@
 # Discord
-discord_api_key = ''
+discord_api_key = 'your_discord_api_key'
+bot_prefix = '.'
 
 # 8ball
 _8ball_aliases = ['eightball', 'ball']
